@@ -1,0 +1,23 @@
+Список использованных источников
+
+1.	Мартин Фаулер. Архитектура корпоративных программных приложений, 2006.
+2.	Стив МакКоннелл. Совершенный код. Мастер класс, 2013.
+3.	Чистый код, Роберт Мартин, 2013
+4.	Рефакторинг. Улучшение существующего кода, Мартин Фаулер, 2013
+5.	Стандартная библиотека С++. Справочное руководство, 2014
+6.	Параллельное программирование на С++ в действии, Энтони Уильямс, 2012
+7.	Эффективное использование С++. 55 советов, Скотт Мейерс, 2014
+8.	Наиболее эффективное использование С++. 35 советов, Скот Мейерс, 2014
+9.	Защищённый код, Майкл Ховард, Дэвид Лебланк, 2005
+10.	Martin Fowler, GUI Architectures, 18 July 2006
+	https://www.martinfowler.com/eaaDev/uiArchs.html
+11.	RFC 2898: PKCS #5: Password-Based Cryptography Specification. v2.0, стр. 9-11
+	https://tools.ietf.org/html/rfc2898
+12.	OpenSSL Wiki, Manual: PKCS5 PBKDF2 HMAC(3)
+	https://wiki.openssl.org/index.php/Manual:PKCS5_PBKDF2_HMAC(3)
+13.	SQlite Homepage
+	https://sqlite.org/index.html
+14.	ICU - International Components for Unicode
+	http://site.icu-project.org/
+15.	The Unicode Consortium
+	http://www.unicode.org/
