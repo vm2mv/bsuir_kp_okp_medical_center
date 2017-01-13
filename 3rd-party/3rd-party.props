@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <THIRD_PARTY>$(MSBuildThisFileDirectory)</THIRD_PARTY>
+    <SQLITE>$(THIRD_PARTY)\sqlite_icu</SQLITE>
+    <BOOST>$(THIRD_PARTY)\boost</BOOST>
+    <OPENSSL>$(THIRD_PARTY)\openssl</OPENSSL>
+    <GTEST>$(THIRD_PARTY)\gtest</GTEST>
+    <ICU>$(THIRD_PARTY)\icu</ICU>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(THIRD_PARTY);$(SQLITE);$(BOOST);$(OPENSSL)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SQLITE)\$(Platform)\$(Configuration);$(BOOST)\lib$(PlatformArchitecture);$(OPENSSL)\lib$(PlatformArchitecture)_vc14\$(Configuration);$(ICU)\lib$(PlatformArchitecture);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="THIRD_PARTY">
+      <Value>$(THIRD_PARTY)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="SQLITE">
+      <Value>$(SQLITE)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="BOOST">
+      <Value>$(BOOST)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="OPENSSL">
+      <Value>$(OPENSSL)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="GTEST">
+      <Value>$(GTEST)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="ICU">
+      <Value>$(ICU)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

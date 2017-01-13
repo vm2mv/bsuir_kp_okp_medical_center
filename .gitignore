@@ -251,4 +251,5 @@ paket-files/
 .idea/
 *.sln.iml
 
-3rd-party/
+3rd-party/*
+!3rd-party/3rd-party.props
